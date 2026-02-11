@@ -20,7 +20,7 @@ Os dados estão organizados para facilitar a integração em diferentes stacks:
 ### Estados (`estados.csv` / `states.sql`)
 | Campo | Descrição |
 | :--- | :--- |
-| `id` | Código IBGE do estado |
+| `id` | Código interno |
 | `nome` | Nome completo da Unidade Federativa |
 | `uf` | Sigla do estado (ex: SP, RJ, PR) |
 | `iso` | Código de padronização internacional (ex: BR-SP) |
@@ -28,7 +28,7 @@ Os dados estão organizados para facilitar a integração em diferentes stacks:
 ### Cidades (`cidades.csv` / `cities.sql`)
 | Campo | Descrição |
 | :--- | :--- |
-| `id` | Código IBGE da cidade |
+| `id` | Código interno |
 | `nome` | Nome oficial do município |
 | `uf` | Sigla do estado ao qual a cidade pertence |
 | `ddd` | Código de discagem direta a distância |
@@ -44,8 +44,8 @@ Exemplo de visualização dos dados estruturados:
 ### Cidades (CSV)
 ```csv
 id,nome,uf,ddd,latitude,longitude
-1100015,Alta Floresta D'Oeste,RO,69,-11.9355,-61.9998
-1100023,Ariquemes,RO,69,-9.90846,-63.0333
-3550308,São Paulo,SP,11,-23.5489,-46.6388
-3304557,Rio de Janeiro,RJ,21,-22.9035,-43.2096
-4105805,Colorado,PR,44,-22.8375,-51.9731
+3853,Alta Floresta D'Oeste,RO,69,-11.9355,-61.9998
+3854,Ariquemes,RO,69,-9.90846,-63.0333
+5349,São Paulo,SP,11,-23.5489,-46.6388
+3661,Rio de Janeiro,RJ,21,-22.9035,-43.2096
+3274,Colorado,PR,44,-22.8375,-51.9731
