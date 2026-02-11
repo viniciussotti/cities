@@ -1,73 +1,51 @@
-🇧🇷 Brazilian Cities & States Database
-Este repositório contém uma base de dados abrangente de Estados e Cidades do Brasil, ideal para sistemas de e-commerce, formulários de cadastro, logística ou qualquer aplicação que utilize dados geográficos nacionais.
+# 🇧🇷 Brazilian Cities & States Database
 
-A base inclui informações essenciais como nomes, siglas de UF, códigos DDD, códigos ISO e coordenadas de geolocalização (latitude e longitude).
+Este repositório contém uma base de dados completa e higienizada de **Estados e Cidades do Brasil**. É uma ferramenta essencial para desenvolvedores que precisam implementar seletores de localidade, sistemas de logística, calculadoras de frete ou qualquer aplicação que dependa de dados geográficos nacionais precisos.
 
-🚀 Formatos Disponíveis
-Os dados estão organizados em dois formatos principais para facilitar a integração:
+A base inclui informações estratégicas como nomes oficiais, siglas de UF, códigos DDD, códigos ISO e coordenadas de geolocalização (latitude e longitude).
 
-CSV: Para manipulação rápida em planilhas ou importação genérica.
+---
 
-SQL: Scripts prontos para execução em bancos de dados relacionais (MySQL/PostgreSQL/MariaDB).
+## 🚀 Formatos Disponíveis
 
-📊 Estrutura dos Dados
-Estados (estados.csv / states.sql)
-ID: Identificador único.
+Os dados estão organizados para facilitar a integração em diferentes stacks:
 
-Nome: Nome completo do estado.
+* **CSV:** Ideal para manipulação rápida em scripts Python, Excel ou importações genéricas.
+* **SQL:** Scripts prontos para execução em bancos de dados relacionais (MySQL, PostgreSQL, MariaDB, SQLite).
 
-UF: Sigla da Unidade Federativa.
+---
 
-Código ISO: Código de padronização internacional.
+## 📊 Estrutura dos Dados
 
-Cidades (cidades.csv / cities.sql)
-ID: Identificador único da cidade.
+### Estados (`estados.csv` / `states.sql`)
+| Campo | Descrição |
+| :--- | :--- |
+| `id` | Código IBGE do estado |
+| `nome` | Nome completo da Unidade Federativa |
+| `uf` | Sigla do estado (ex: SP, RJ, PR) |
+| `iso` | Código de padronização internacional (ex: BR-SP) |
 
-Nome: Nome da cidade.
+### Cidades (`cidades.csv` / `cities.sql`)
+| Campo | Descrição |
+| :--- | :--- |
+| `id` | Código IBGE da cidade |
+| `nome` | Nome oficial do município |
+| `uf` | Sigla do estado ao qual a cidade pertence |
+| `ddd` | Código de discagem direta a distância |
+| `latitude` | Coordenada geográfica (Eixo Y) |
+| `longitude` | Coordenada geográfica (Eixo X) |
 
-UF: Sigla do estado pertencente.
+---
 
-DDD: Código de discagem direta a distância.
+## 📝 Demonstração dos Dados
 
-Latitude: Coordenada geográfica vertical.
+Exemplo de visualização dos dados estruturados:
 
-Longitude: Coordenada geográfica horizontal.
-
-📝 Demonstração dos Dados
-Abaixo, um exemplo de como os dados estão estruturados no arquivo CSV:
-
-Cidades:
-
-Snippet de código
+### Cidades (CSV)
+```csv
 id,nome,uf,ddd,latitude,longitude
 1100015,Alta Floresta D'Oeste,RO,69,-11.9355,-61.9998
 1100023,Ariquemes,RO,69,-9.90846,-63.0333
 3550308,São Paulo,SP,11,-23.5489,-46.6388
 3304557,Rio de Janeiro,RJ,21,-22.9035,-43.2096
-Estados:
-
-Snippet de código
-id,nome,uf,iso
-11,Rondônia,RO,BR-RO
-35,São Paulo,SP,BR-SP
-33,Rio de Janeiro,RJ,BR-RJ
-🛠️ Como Utilizar
-Importação SQL
-Se você utiliza um banco de dados SQL, basta executar os scripts na ordem:
-
-states.sql
-
-cities.sql
-
-Uso com Python/Pandas
-Python
-import pandas as pd
-
-# Carregar as cidades
-df_cidades = pd.read_csv('cidades.csv')
-
-# Filtrar cidades de um estado específico com DDD
-sp_cidades = df_cidades[df_cidades['uf'] == 'SP']
-print(sp_cidades[['nome', 'ddd']])
-📄 Licença
-Este projeto está sob a licença MIT. Sinta-se à vontade para usar e contribuir.
+4105805,Colorado,PR,44,-22.8375,-51.9731
