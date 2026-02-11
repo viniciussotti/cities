@@ -9,7 +9,7 @@ CREATE TABLE `cities` (
   `longitude` varchar(50) COLLATE utf8mb4_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (1, 1, 'Acrelândia', 'AC', 1200013, 68, '-67.0523165800206', '-10.0737938924635'),
 (2, 1, 'Assis Brasil', 'AC', 1200054, 68, '-69.5634591746677', '-10.9428656809172'),
 (3, 1, 'Brasiléia', 'AC', 1200104, 68, '-68.7479434259584', '-11.0164110190858'),
@@ -609,7 +609,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (597, 5, 'Uauá', 'BA', 2932002, 74, '-39.4880641705295', '-9.83265416561483'),
 (598, 5, 'Ubaíra', 'BA', 2932101, 75, '-39.662032567228', '-13.2680894848911'),
 (599, 5, 'Ubaitaba', 'BA', 2932200, 73, '-39.3225474057589', '-14.3104363678067');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (600, 5, 'Ubatã', 'BA', 2932309, 73, '-39.5226677883931', '-14.211466553942'),
 (601, 5, 'Uibaí', 'BA', 2932408, 74, '-42.1337955487965', '-11.3381145644914'),
 (602, 5, 'Umburanas', 'BA', 2932457, 74, '-41.3329141302901', '-10.7292712187978'),
@@ -1206,7 +1206,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (1193, 10, 'Davinópolis', 'MA', 2103752, 99, '-47.4049963875281', '-5.53445621610635'),
 (1194, 10, 'Dom Pedro', 'MA', 2103802, 99, '-44.4400099109689', '-5.03844763516531'),
 (1195, 10, 'Duque Bacelar', 'MA', 2103901, 98, '-42.9441802036073', '-4.14781909711357');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (1196, 10, 'Esperantinópolis', 'MA', 2104008, 99, '-44.8860686990188', '-4.87030089747643'),
 (1197, 10, 'Estreito', 'MA', 2104057, 99, '-47.4478829861377', '-6.56808498021472'),
 (1198, 10, 'Feira Nova do Maranhão', 'MA', 2104073, 99, '-46.6873552159638', '-6.96313554062729'),
@@ -1783,7 +1783,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (1769, 11, 'Ladainha', 'MG', 3137007, 33, '-41.740449939658', '-17.6244796696874'),
 (1770, 11, 'Lagamar', 'MG', 3137106, 34, '-46.8125356350839', '-18.1769616222933'),
 (1771, 11, 'Lagoa da Prata', 'MG', 3137205, 37, '-45.5416920320703', '-20.0237653293211');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (1772, 11, 'Lagoa dos Patos', 'MG', 3137304, 38, '-44.5783346323487', '-16.9784492004609'),
 (1773, 11, 'Lagoa Dourada', 'MG', 3137403, 32, '-44.0711164400161', '-20.918598617034'),
 (1774, 11, 'Lagoa Formosa', 'MG', 3137502, 34, '-46.4065287919616', '-18.7755725803991'),
@@ -2356,7 +2356,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (2341, 13, 'Luciára', 'MT', 5105309, 66, '-50.6632015831694', '-11.2280970998312'),
 (2342, 13, 'Vila Bela da Santíssima Trindade', 'MT', 5105507, 65, '-59.9525581994781', '-15.0093244787806'),
 (2343, 13, 'Marcelândia', 'MT', 5105580, 66, '-54.5193062321905', '-11.0805914112817');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (2344, 13, 'Matupá', 'MT', 5105606, 66, '-54.9318057201458', '-10.1721074662032'),
 (2345, 13, 'Mirassol D\'oeste', 'MT', 5105622, 65, '-58.0979035689912', '-15.6740707810881'),
 (2346, 13, 'Nobres', 'MT', 5105903, 65, '-56.3340848305988', '-14.7245002733703'),
@@ -2945,7 +2945,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (2929, 16, 'Santa Filomena', 'PE', 2612554, 87, '-40.615775185024', '-8.16051116726482'),
 (2930, 16, 'Santa Maria da Boa Vista', 'PE', 2612604, 87, '-39.8242357254967', '-8.8041265'),
 (2931, 16, 'Santa Maria do Cambucá', 'PE', 2612703, 81, '-35.8852433390024', '-7.83181342623099');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (2932, 16, 'Santa Terezinha', 'PE', 2612802, 87, '-37.4800327232567', '-7.37035573926697'),
 (2933, 16, 'São Benedito do Sul', 'PE', 2612901, 81, '-35.9311226193514', '-8.81043823419499'),
 (2934, 16, 'São Bento do Una', 'PE', 2613008, 81, '-36.4462983615963', '-8.51986752058347'),
@@ -3520,7 +3520,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (3503, 18, 'Rio Branco do Sul', 'PR', 4122206, 41, '-49.3167138827683', '-25.1901653515541'),
 (3504, 18, 'Rio Negro', 'PR', 4122305, 41, '-49.7976853768382', '-26.10040797'),
 (3505, 18, 'Rolândia', 'PR', 4122404, 43, '-51.3627803563626', '-23.313592485');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (3506, 18, 'Roncador', 'PR', 4122503, 44, '-52.2760525503737', '-24.5951071879967'),
 (3507, 18, 'Rondon', 'PR', 4122602, 44, '-52.7624923118905', '-23.4126599793783'),
 (3508, 18, 'Rosário do Ivaí', 'PR', 4122651, 43, '-51.2499448251477', '-24.2535525559056'),
@@ -4095,7 +4095,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (4077, 23, 'Esteio', 'RS', 4307708, 51, '-51.143837339432', '-29.8521862954581'),
 (4078, 23, 'Estrela', 'RS', 4307807, 51, '-51.9702602941755', '-29.5034718768222'),
 (4079, 23, 'Estrela Velha', 'RS', 4307815, 51, '-53.1602937786865', '-29.1796613617013');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (4080, 23, 'Eugênio de Castro', 'RS', 4307831, 55, '-54.1481126184862', '-28.5250597626107'),
 (4081, 23, 'Fagundes Varela', 'RS', 4307864, 54, '-51.691448747733', '-28.8821343126181'),
 (4082, 23, 'Farroupilha', 'RS', 4307906, 54, '-51.3483495737698', '-29.2236791868351'),
@@ -4674,7 +4674,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (4655, 24, 'São Carlos', 'SC', 4216008, 49, '-53.017394273321', '-27.0786350778961'),
 (4656, 24, 'São Cristovão do Sul', 'SC', 4216057, 49, '-50.434628933086', '-27.2829466733989'),
 (4657, 24, 'São Domingos', 'SC', 4216107, 49, '-52.5372274685343', '-26.5578303695187');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (4658, 24, 'São Francisco do Sul', 'SC', 4216206, 47, '-48.6375707581745', '-26.244017884154'),
 (4659, 24, 'São João do Oeste', 'SC', 4216255, 49, '-53.5959666797443', '-27.0974826254415'),
 (4660, 24, 'São João Batista', 'SC', 4216305, 48, '-48.8570042802462', '-27.2958805567379'),
@@ -5270,7 +5270,7 @@ INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, 
 (5250, 26, 'Presidente Epitácio', 'SP', 3541307, 18, '-52.1152758269966', '-21.768781995'),
 (5251, 26, 'Presidente Prudente', 'SP', 3541406, 18, '-51.3867655819125', '-22.1227435'),
 (5252, 26, 'Presidente Venceslau', 'SP', 3541505, 18, '-51.8402588050568', '-21.875939505');
-INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `latitude`, `longitude`) VALUES
+INSERT INTO `cities` (`id`, `state_id`, `name`, `uf`, `iso`, `ddd`, `longitude`, `latitude`) VALUES
 (5253, 26, 'Promissão', 'SP', 3541604, 14, '-49.8577352347911', '-21.538867499355'),
 (5254, 26, 'Quadra', 'SP', 3541653, 15, '-48.0526853360855', '-23.3015749993139'),
 (5255, 26, 'Quatá', 'SP', 3541703, 18, '-50.6979473893502', '-22.2494047983717'),
